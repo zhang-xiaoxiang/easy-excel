@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <title>excel导入和导出</title>
+</head>
+
+<body>
+文件上传(excel)
+<br/>
+<form enctype="multipart/form-data" method="post" action="/user/import">
+    文件:<input type="file" name="excel"/>
+    名称:<input type="text" name="name"/>
+    <input type="submit" value="上传"/>
+</form>
+<br/>
+<br/>
+文件上传(多sheet 的 excel)
+<form enctype="multipart/form-data" method="post" action="/user/manysheet">
+    文件:<input type="file" name="excel"/>
+    名称:<input type="text" name="name"/>
+    <input type="submit" value="上传"/>
+</form>
+
+
+<!--ajax方式(没有实现)-->
+<p>ajax方式(没有实现)</p>
+<input type="file" name="excel" id="f" multiple>
+
+
+</body>
+</html>
